@@ -49,4 +49,14 @@
     <servlet-name>CreerProduit</servlet-name>
     <url-pattern>/creerproduit</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListerProduit</display-name>
+    <servlet-name>ListerProduit</servlet-name>
+    <servlet-class>com.site.controllers.produits.ListerProduit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListerProduit</servlet-name>
+    <url-pattern>/listerproduit</url-pattern>
+  </servlet-mapping>
 </web-app>

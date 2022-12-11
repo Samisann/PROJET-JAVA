@@ -18,7 +18,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "Produit")
+@Table(name = "PRODUIT")
 public class Produit { 
 	
    @Id
@@ -29,9 +29,22 @@ public class Produit {
    @Column(name = "libelle")
    private String libelle;
    
-  @OneToMany( cascade = CascadeType.ALL,mappedBy = "produit")
+   @Column(name = "price")
+   private double price;
+   
+   
+  public double getPrice() {
+	return price;
+}
+
+public void setPrice(double price) {
+	this.price = price;
+}
+
+@OneToMany( cascade = CascadeType.ALL,mappedBy = "produit")
    private Set<Category> categories;
 
+  
 
    public Long getCode() {
       return code;

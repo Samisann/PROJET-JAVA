@@ -4,11 +4,20 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_2_2.xsd"
              version="2.2">
    <persistence-unit name="projet-java">
+           <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <properties>
+        			
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/site" />
             <property name="jakarta.persistence.jdbc.user" value="postgres" />
             <property name="jakarta.persistence.jdbc.password" value="postgre" />
+                            <!-- AUTO-GENERATES DATABASE FROM ANNOTATIONS METADATA -->
+ <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create" />
+                 <property name="jakarta.persistence.schema-generation.create-source"  value="metadata"/>
+                 <property name="jakarta.persistence.schema-generation.drop-source" value="metadata"/>
+                 <property name="hibernate.hbm2ddl.auto" value="create-drop" />
+                 <property name="hibernate.show_sql" value="true" />
         </properties>
    </persistence-unit>
 </persistence>

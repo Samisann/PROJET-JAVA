@@ -455,7 +455,7 @@
           </li>
           <li class="nav-header">Produits</li>
           <li class="nav-item">
-            <a href="pages/calendar.html" class="nav-link">
+            <a href="form-produit.jsp" class="nav-link">
               <i class="nav-icon fas fa-calendar-alt"></i>
               <p>
                 Création des produits
@@ -464,7 +464,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="produit.jsp" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
                 Liste des produits
