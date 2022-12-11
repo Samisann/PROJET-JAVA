@@ -464,7 +464,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="produit.jsp" class="nav-link">
+            <a href="/listerproduit" class="nav-link">
               <i class="nav-icon far fa-image"></i>
               <p>
                 Liste des produits

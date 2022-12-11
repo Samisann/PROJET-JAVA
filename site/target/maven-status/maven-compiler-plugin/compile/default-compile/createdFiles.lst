@@ -1,3 +1,4 @@
+com\site\controllers\produits\ListerProduit.class
 com\site\controllers\produits\CreerProduit.class
 com\site\controllers\produits\DeleteProduit.class
 com\site\entities\Category.class
