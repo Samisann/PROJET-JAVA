@@ -59,4 +59,24 @@
     <servlet-name>ListerProduit</servlet-name>
     <url-pattern>/listerproduit</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ModifierProduit</display-name>
+    <servlet-name>ModifierProduit</servlet-name>
+    <servlet-class>com.site.controllers.produits.ModifierProduit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierProduit</servlet-name>
+    <url-pattern>/modifierproduit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreerCategorie</display-name>
+    <servlet-name>CreerCategorie</servlet-name>
+    <servlet-class>com.site.controllers.categorie.CreerCategorie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreerCategorie</servlet-name>
+    <url-pattern>/creercategorie</url-pattern>
+  </servlet-mapping>
 </web-app>
