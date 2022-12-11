@@ -1,6 +1,7 @@
 package com.site.entities;
 
 import java.util.ArrayList;
+import com.site.entities.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -17,7 +18,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "produit")
+@Table(name = "Produit")
 public class Produit { 
 	
    @Id
@@ -28,14 +29,9 @@ public class Produit {
    @Column(name = "libelle")
    private String libelle;
    
-   @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "produit")
-   private Set<Produit> produits;
-   
-   @OneToMany
-   @JoinTable( name = "produit",
-               joinColumns = @JoinColumn( name = "Produit" ),
-               inverseJoinColumns = @JoinColumn( name = "idCommand" ) )
-   private List<Produit> commands = new ArrayList<>();
+  @OneToMany( cascade = CascadeType.ALL,mappedBy = "produit")
+   private Set<Category> categories;
+
 
    public Long getCode() {
       return code;
@@ -53,20 +49,20 @@ public class Produit {
       this.libelle = libelle;
    }
 
-   public void addProduit(Produit produit) {
-      if (this.produits == null) {
-         this.produits = new HashSet<>();
+   public void addProduit(Category category) {
+      if (this.categories == null) {
+         this.categories = new HashSet<>();
       }
-      this.produits.add(produit);
+      this.categories.add(category);
    }
 
-   public void removeProduit(Produit produit) {
-      if (this.produits != null)
-         produits.remove(produit);
+   public void removeProduit(Category category) {
+      if (this.categories != null)
+    	  categories.remove(category);
    }
 
-   public Set<Produit> getProduits() {
-      return produits;
+   public Set<Category> getCategories() {
+      return categories;
    }
 
 

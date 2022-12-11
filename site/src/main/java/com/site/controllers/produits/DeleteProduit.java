@@ -23,7 +23,7 @@ import jakarta.transaction.UserTransaction;
 public class DeleteProduit extends HttpServlet {
 
    private static final long serialVersionUID = 1L;
-   @PersistenceContext(unitName = "sample-jpa")
+   @PersistenceContext(unitName = "projet-java")
    private EntityManager em;
    @Resource
    private UserTransaction userTransaction;

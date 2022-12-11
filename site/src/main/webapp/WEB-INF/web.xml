@@ -31,16 +31,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>CreerProduit</display-name>
-    <servlet-name>CreerProduit</servlet-name>
-    <servlet-class>com.site.controllers.produits.CreerProduit</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>CreerProduit</servlet-name>
-    <url-pattern>/creerproduit</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>DeleteProduit</display-name>
     <servlet-name>DeleteProduit</servlet-name>
     <servlet-class>com.site.controllers.produits.DeleteProduit</servlet-class>
@@ -48,5 +38,15 @@
   <servlet-mapping>
     <servlet-name>DeleteProduit</servlet-name>
     <url-pattern>/deleteproduit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CreerProduit</display-name>
+    <servlet-name>CreerProduit</servlet-name>
+    <servlet-class>com.site.controllers.produits.CreerProduit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreerProduit</servlet-name>
+    <url-pattern>/creerproduit</url-pattern>
   </servlet-mapping>
 </web-app>

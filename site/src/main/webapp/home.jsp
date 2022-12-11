@@ -1,4 +1,4 @@
-<%@ include file="/WEB-INF/template/header.jsp" %>
+<%@ include file="./header.jsp" %>
       <!--  Modal -->
       <div class="modal fade" id="productView" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
