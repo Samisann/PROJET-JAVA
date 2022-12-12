@@ -48,7 +48,7 @@
   <servlet-mapping>
     <servlet-name>CreerProduit</servlet-name>
     <url-pattern>/creerproduit</url-pattern>
-  </servlet-mapping> 
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>ListerProduit</display-name>
@@ -65,8 +65,11 @@
     <servlet-name>ModifierProduit</servlet-name>
     <servlet-class>com.site.controllers.produits.ModifierProduit</servlet-class>
   </servlet>
-
-<!--   <servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierProduit</servlet-name>
+    <url-pattern>/modifierproduit</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <description></description>
     <display-name>CreerCategorie</display-name>
     <servlet-name>CreerCategorie</servlet-name>
@@ -75,7 +78,7 @@
   <servlet-mapping>
     <servlet-name>CreerCategorie</servlet-name>
     <url-pattern>/creercategorie</url-pattern>
-  </servlet-mapping> -->
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>ModifierCategorie</display-name>
