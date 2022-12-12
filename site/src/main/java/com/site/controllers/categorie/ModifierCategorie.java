@@ -43,7 +43,7 @@ public class ModifierCategorie extends HttpServlet {
          request.setAttribute("categorie", categorie);
          String errorMessage = request.getParameter("errorMessage");
          request.setAttribute("errorMessage", errorMessage);
-         this.getServletContext().getRequestDispatcher("/modifier-produit.jsp").forward(request,
+         this.getServletContext().getRequestDispatcher("/modifier-categorie.jsp").forward(request,
                response);
       }
 
