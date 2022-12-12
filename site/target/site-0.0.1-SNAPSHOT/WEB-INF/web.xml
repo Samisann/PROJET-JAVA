@@ -65,10 +65,7 @@
     <servlet-name>ModifierProduit</servlet-name>
     <servlet-class>com.site.controllers.produits.ModifierProduit</servlet-class>
   </servlet>
-  <servlet-mapping>
-    <servlet-name>ModifierProduit</servlet-name>
-    <url-pattern>/modifierproduit</url-pattern>
-  </servlet-mapping>
+
   <servlet>
     <description></description>
     <display-name>CreerCategorie</display-name>

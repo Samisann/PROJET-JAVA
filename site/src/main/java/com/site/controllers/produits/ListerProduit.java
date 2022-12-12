@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ListerSportServlet
  */
-
+@WebServlet("/site-0.0.1-SNAPSHOT/listerProduit")
 public class ListerProduit extends HttpServlet {
    private static final long serialVersionUID = 1L;
    @PersistenceContext(unitName = "projet-java")

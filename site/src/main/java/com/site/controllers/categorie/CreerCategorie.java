@@ -20,7 +20,7 @@ import jakarta.transaction.UserTransaction;
 /**
  * Servlet implementation class CreerProduit
  */
-@WebServlet("/creerCategorie")
+//@WebServlet("/creerCategorie")
 public class CreerCategorie extends HttpServlet {
    private static final long serialVersionUID = 1L;
    @PersistenceContext(unitName = "sample-jpa")

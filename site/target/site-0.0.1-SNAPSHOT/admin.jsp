@@ -473,10 +473,18 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/kanban.html" class="nav-link">
+            <a href="categorie.jsp" class="nav-link">
               <i class="nav-icon fas fa-columns"></i>
               <p>
                 Liste des catégories
+              </p>
+            </a>
+          </li>
+                <li class="nav-item">
+            <a href="form-categorie.jsp" class="nav-link">
+              <i class="nav-icon fas fa-columns"></i>
+              <p>
+                Création des catégories
               </p>
             </a>
           </li>
