@@ -23,7 +23,7 @@ import jakarta.transaction.UserTransaction;
 //@WebServlet("/creerCategorie")
 public class CreerCategorie extends HttpServlet {
    private static final long serialVersionUID = 1L;
-   @PersistenceContext(unitName = "sample-jpa")
+   @PersistenceContext(unitName = "projet-java")
    private EntityManager em;
    @Resource
    private UserTransaction userTransaction;
