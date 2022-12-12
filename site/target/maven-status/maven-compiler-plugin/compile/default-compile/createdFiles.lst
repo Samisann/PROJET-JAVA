@@ -1,5 +1,7 @@
+com\site\controllers\categorie\ListerCategorie.class
 com\site\controllers\produits\ModifierProduit.class
 com\site\controllers\produits\ListerProduit.class
+com\site\controllers\categorie\ModifierCategorie.class
 com\site\controllers\categorie\CreerCategorie.class
 com\site\controllers\produits\CreerProduit.class
 com\site\controllers\produits\DeleteProduit.class

@@ -7,7 +7,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ModifierCategorie
+ * Servlet implementation class ModifierProduit
  */
 public class ModifierCategorie extends HttpServlet {
 	private static final long serialVersionUID = 1L;

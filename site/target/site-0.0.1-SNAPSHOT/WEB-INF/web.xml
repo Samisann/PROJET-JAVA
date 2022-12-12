@@ -79,4 +79,24 @@
     <servlet-name>CreerCategorie</servlet-name>
     <url-pattern>/creercategorie</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ModifierCategorie</display-name>
+    <servlet-name>ModifierCategorie</servlet-name>
+    <servlet-class>com.site.controllers.categorie.ModifierCategorie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifierCategorie</servlet-name>
+    <url-pattern>/modifiercategorie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ListerCategorie</display-name>
+    <servlet-name>ListerCategorie</servlet-name>
+    <servlet-class>com.site.controllers.categorie.ListerCategorie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListerCategorie</servlet-name>
+    <url-pattern>/listercategorie</url-pattern>
+  </servlet-mapping>
 </web-app>
