@@ -56,7 +56,7 @@ public class ModifierCategorie extends HttpServlet {
          String libelle = request.getParameter("libelle");
          String message = "";
          Long codeCategorie = Long.valueOf(request.getParameter("codeCategorie"));
-         String uriRedirect = "modifierProduit?codeCategorie=" + codeCategorie + "&errorMessage=%s";
+         String uriRedirect = "modifierCategorie?codeCategorie=" + codeCategorie + "&errorMessage=%s";
          if (libelle == null || libelle.isEmpty() || libelle.isBlank()) {
             message = "Veuillez renseignez le libellé de la categorie";
             redirectWithErrorMessage(response, uriRedirect, message);
